@@ -6,7 +6,7 @@
 
 ## 📝 Description
 
-This is a REST API for managing supermarket branches, sales and products. It allows performing CRUD operations on products, including:
+This is a REST API for managing supermarket branches, sales and products. It allows performing CRUD operations on all the entities, including:
 
 - Create
 - List all
