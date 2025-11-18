@@ -43,7 +43,7 @@ public class ProductController {
 	@PostMapping
 	public ResponseEntity<ProductResponseDTO> create(@Valid @RequestBody ProductCreateDTO dto){
 		ProductResponseDTO createdProduct = productService.createProduct(dto);
-		return ResponseEntity.created(URI.create("/api/products" + createdProduct.getId())).body(createdProduct);
+		return ResponseEntity.created(URI.create("/api/products/" + createdProduct.getId())).body(createdProduct);
 	}
 	
 	@PatchMapping("/{id}")
